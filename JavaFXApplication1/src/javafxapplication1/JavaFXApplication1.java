@@ -11,6 +11,9 @@ import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.stage.*;
 import javafx.geometry.*;
+import javafx.scene.text.*;
+
+
 
 /**
  *
@@ -26,12 +29,22 @@ public class JavaFXApplication1 extends Application {
         Scene scene = new Scene(hbox, 700,300);
     }
     public void Layout1(Stage stage){
+        Button btn = new Button();
+        btn.setText("Close");
+        
         BorderPane pane = new BorderPane();
         HBox  hbox = new HBox();
         hbox.getChildren().addAll();
     }
     
     public void Layout2(Stage stage){
+        Button btn = new Button();
+        btn.setText("YES");
+        Button btn2 = new Button();
+        btn2.setText("NO");
+        Text text = new Text();
+        text.setFont(new Font(45));
+
         BorderPane pane2 = new BorderPane();
         HBox  hbox2 = new HBox();
         hbox2.getChildren().addAll();

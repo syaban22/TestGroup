@@ -21,6 +21,7 @@ public class JavaFXApplication1 extends Application {
     @Override
     public void start(Stage stage) {
         Layout1(stage);
+        Layout2(stage);
     }
     public void Layout1(Stage stage){
     

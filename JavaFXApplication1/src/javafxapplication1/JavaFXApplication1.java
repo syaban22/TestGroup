@@ -35,6 +35,12 @@ public class JavaFXApplication1 extends Application {
         BorderPane pane = new BorderPane();
         HBox  hbox = new HBox();
         hbox.getChildren().addAll();
+        
+        Scene scene = new Scene(pane, 600, 300);
+        stage.setTitle("Main Menu");
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.show();
     }
     
     public void Layout2(Stage stage){
@@ -49,6 +55,11 @@ public class JavaFXApplication1 extends Application {
         HBox  hbox2 = new HBox();
         hbox2.getChildren().addAll();
         
+        Scene scene = new Scene(pane2, 600, 300);
+        stage.setTitle("Main Menu");
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.show();
     }
     
     public static void main(String[] args) {

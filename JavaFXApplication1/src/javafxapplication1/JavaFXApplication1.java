@@ -23,18 +23,14 @@ public class JavaFXApplication1 extends Application {
     
     @Override
     public void start(Stage stage) {
-        Layout1(stage);
         Layout2(stage);
-        HBox hbox = new HBox();
-        Scene scene = new Scene(hbox, 700,300);
     }
     public void Layout1(Stage stage){
         Button btn = new Button();
         btn.setText("Close");
         
         BorderPane pane = new BorderPane();
-        HBox  hbox = new HBox();
-        hbox.getChildren().addAll();
+        
         
         Scene scene = new Scene(pane, 600, 300);
         stage.setTitle("Main Menu");
@@ -48,14 +44,18 @@ public class JavaFXApplication1 extends Application {
         btn.setText("YES");
         Button btn2 = new Button();
         btn2.setText("NO");
-        Text text = new Text();
-        text.setFont(new Font(45));
+        Text text = new Text("Are You Sure?");
+        text.setFont(new Font(20));
 
+        Region spacer = new Region();
         BorderPane pane2 = new BorderPane();
+        HBox.setHgrow(spacer, Priority.ALWAYS);
         HBox  hbox2 = new HBox();
-        hbox2.getChildren().addAll();
+        hbox2.getChildren().addAll(btn,spacer,btn2);
+        pane2.setBottom(hbox2);
+        pane2.setCenter(text);
         
-        Scene scene = new Scene(pane2, 600, 300);
+        Scene scene = new Scene(pane2);
         stage.setTitle("Main Menu");
         stage.setScene(scene);
         stage.setResizable(false);
